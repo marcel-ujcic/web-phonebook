@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Phone book</title>
+</head>
+
+<body>
+<div class="col-3">
+    <fieldset class="fieldset-container">
+        <legend>Add a new contact </legend>
+			<label for="first">Name: </label>
+
+			<input  id="first" type="text" autofocus />
+
+			<label for="last">Surname: </label>
+			<input  id="last" type="text" />
+
+            <label for="number">Phone number: </label>
+			<input id="number" type="text" />
+            <button class="btn" id="addNew">Add new</button>
+            <a href="viri.html">Sources</a>
+    </fieldset>
+</div>
+
+    <div class="menu-container">
+       <button onclick="sort(this.id)" id="NameAZ">Names sort a-z</button>
+       <button onclick="sort(this.id)" id="NameZA">Names sort z-a</button>
+       <button onclick="sort(this.id)" id="SurnameAZ">Surnames sort a-z</button>
+       <button onclick="sort(this.id)" id="SurnameZA">Surnames sort z-a</button>
+    </div>
+<table id="phoneBook" class="styleTable">
+    <tr class="header">
+        <th>Name
+        </th>
+       
+        <th>Surname</th>
+        <th>Phone number</th>
+        <th>Options</th>
+    </tr>
+</table>
+<!--<div class="col-3">-->
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+        <h1>Edit contact</h1>
+    
+        <label id="nameID"><b>Name</b></label>
+        <input type="text" placeholder="Enter new name" name="name" id="newName" required>
+    
+        <label id="surnameID"><b>Surname</b></label>
+        <input type="text" placeholder="Enter new surname" name="surname" id="newSurname" required>
+
+        <label  id ="phoneID"><b>Phone</b></label>
+        <input type="text" placeholder="Enter new phone number" name="phone" required id="newPhone" >
+    
+        <button type="submit" class="btn" id="btnSave" onclick="saveNewValues()">Save changes</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+<!--</div> -->
+</body>
+
+</html>

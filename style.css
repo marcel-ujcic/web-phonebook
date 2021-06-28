@@ -1,0 +1,206 @@
+table{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+fieldset{
+   text-align:left;
+}
+
+label{
+    margin-left: 5%;
+}
+
+tr{
+    border: 1px solid black;
+}
+tr{
+    text-align:center;
+}
+
+#btnSources{
+    text-align: right;
+    margin-left: 10%;
+}
+
+/* Popup edit input  source: https://www.w3schools.com/howto/howto_js_popup_form.asp*/
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  right: 15px;
+  margin: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+} 
+
+
+/*fieldset-container*/
+
+.fieldset-container .btn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.fieldset-container input[type=text] {
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.fieldset-container a{
+  margin: 5px;
+  text-decoration: none;
+}
+
+.styleTable button{
+  background-color: #3377f5;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+.styleTable tr{
+    background-color: rgb(241, 245, 245);
+}
+
+/*Menu bar*/
+.menu-container{
+  margin-left: 30%;
+  margin-top:  -20%;
+}
+.menu-container button{
+  background-color: #3377f5;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-bottom:10px;
+  margin-left: 5px;
+  opacity: 0.8;
+  display: block;
+}
+
+
+
+/*Mobile */
+[class*="col-"] {
+  float: center;
+  padding: 15px;
+}
+.col-3 { width: 25%; }
+@media only screen and (min-width:600px){
+  /*Tablet*/
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+
+@media only screen and (min-width:993px){
+  /*Desktop*/
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 100%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+  .menu-container button{
+    display: inline;
+  }
+  .menu-container{
+    margin: auto;
+  }
+}
+
+
+/* Sources*/
+
+.sources{
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+}
