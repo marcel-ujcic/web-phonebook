@@ -1,2 +1,2 @@
 # web-phonebook
-Simple phonebook that sotore your contacts in localstorage.
+Simple phonebook that store your contacts in localstorage.
